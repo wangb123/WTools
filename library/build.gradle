@@ -52,7 +52,7 @@ repositories {
 
 publish {
     artifactId = 'tools'
-    publishVersion = '0.0.1'
+    publishVersion = '0.0.3'
     desc = '这里是一个工具库'
     userOrg = rootProject.ext.pub_user
     groupId = rootProject.ext.pub_group
