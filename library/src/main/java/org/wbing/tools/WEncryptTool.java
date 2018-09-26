@@ -45,7 +45,7 @@ public class WEncryptTool {
         return md5sb.toString();
     }
 
-    public String fileToMD5(File file) {
+    public static String fileToMD5(File file) {
         if (file == null || !file.isFile()) {
             return "";
         }
