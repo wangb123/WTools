@@ -14,7 +14,7 @@ android {
         renderscriptTargetApi 19
         renderscriptSupportModeEnabled true
 
-        resourcePrefix "w_list_"//添加一个资源前缀，防止资源冲突
+        resourcePrefix "w_tool_"//添加一个资源前缀，防止资源冲突
     }
 
     buildTypes {
@@ -43,8 +43,6 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation "$api_recyclerview"
-
 }
 repositories {
     mavenCentral()
@@ -52,7 +50,7 @@ repositories {
 
 publish {
     artifactId = 'tools'
-    publishVersion = '0.0.5'
+    publishVersion = '0.0.6'
     desc = '这里是一个工具库'
     userOrg = rootProject.ext.pub_user
     groupId = rootProject.ext.pub_group
